@@ -2,14 +2,22 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   color: #bdc1c6;
 }
 
 body {
-   font-family: 'Roboto', sans serif;
+   font-family: 'Roboto', arial, sans serif;
    font-size: 14px;
    background: #202124;
    height: 100vh;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+   cursor: pointer;
 }
 
 header {
@@ -19,13 +27,13 @@ header {
 }
 
 header a {
-   text-decoration: none;
    padding: 5px;
    margin: 0 5px;
+   color: white;
 }
 
-header a:hover {
-   text-decoration: underline;
+.header-left a {
+   color: #bdc1c6;
 }
 
 .header-left {
@@ -36,17 +44,19 @@ header a:hover {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   color: white;
 }
 
 .header-right .header__apps {
    margin-right: 10px;
+   color: rgba(255, 255, 255, 0.87);
 }
 
 main {
    display: flex;
    flex: 1;
    flex-direction: column;
-   margin-top: 100px;
+   padding-top: 180px;
    align-items: center;
 }
 
@@ -55,4 +65,97 @@ main img {
    width: 272px;
    object-fit: contain;
    object-position: center bottom;
+}
+
+.search-input {
+   display: flex;
+   align-items: center;
+   border: 1px solid #5f6368;
+   height: 44px;
+   padding: 10px 20px;
+   border-radius: 24px;
+   width: 75vw;
+   margin: 0 auto;
+   margin-top: 40px;
+   max-width: 560px;
+}
+
+.search-input:hover {
+   background-color: #303134;
+   border-color: rgba(223, 225, 229, 0);
+   box-shadow: 0 1px 6px 0 #171717;
+}
+
+.search-input input {
+   flex: 1;
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: #e8eaed;
+   height: 34px;
+   font-size: 16px;
+}
+
+.material-icons {
+   color: #9aa0a6;
+}
+
+.microphone, 
+.camera {
+   height: 24px;
+   width: 24px;
+}
+
+.microphone {
+   margin: 0 15px;
+}
+
+.search-buttons {
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+.search-buttons button {
+   margin: 11px 4px;
+   padding: 10px 15px;
+   background-color: #303134;
+   color: #e8eaed;
+   outline: none;
+   border: 1px solid #303134;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.search-buttons button:hover {
+   border: 1px solid #5f6368;
+   box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+}
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #171717;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;
+
+}
+
+footer a {
+   color: #999da2;
+   padding: 5px;
+}
+
+.footer-middle {
+   position: relative;
+   left: -60px;
+}
+
+.footer-middle img {
+   height: 12px;
+   width: 14px;
 }
